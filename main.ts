@@ -1,9 +1,7 @@
+let y2 = 0
+let y1 = 0
 let x = 2
 let y = 2
-let x1 = x + 1
-let y1 = y + 1
-let x2 = x + 2
-let y2 = x + 2
 basic.forever(function () {
     led.plot(x, y)
     while (y > 0) {
@@ -22,6 +20,7 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
+    let x1 = 0
     led.plot(x1, y1)
     while (y1 > 0) {
         led.plot(x1, y1)
@@ -39,6 +38,7 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
+    let x2 = 0
     led.plot(x2, y2)
     while (y2 > 0) {
         led.plot(x2, y2)
